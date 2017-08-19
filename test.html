@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>test</title>
+    <script>
+          function deleteDup(arr){
+          let arList = [];
+          arr.forEach(function(item){                    
+                    if(arList.toString() === [].toString()
+                              || !arList.includes(item)){
+                              arList.push(item);
+                    }
+          });
+          return arList;
+}
+    </script>
+</head>
+<body>
+
+          <script>
+                    let arr = ['s', 'a', 's', 'b', 'a', 1, '1', 1];
+                    alert(deleteDup(arr));
+          </script>
+
+</body>
+</html>
